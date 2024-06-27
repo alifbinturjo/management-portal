@@ -1,4 +1,22 @@
 # depslib dependency file v1.0
-1719507167 source:c:\users\user\documents\management-portal\portal\main.cpp
+1719521178 source:c:\users\user\documents\management-portal\portal\main.cpp
+	<iostream>
+	"login.h"
+	"headers.h"
+
+1719525878 c:\users\user\documents\management-portal\portal\login.h
+	<string>
+
+1719526905 source:c:\users\user\documents\management-portal\portal\login.cpp
+	"login.h"
+	"headers.h"
+	<iostream>
+
+1719526905 c:\users\user\documents\management-portal\portal\headers.h
+	<string>
+
+1719525878 source:c:\users\user\documents\management-portal\portal\cpps.cpp
+	"headers.h"
+	"login.h"
 	<iostream>
 

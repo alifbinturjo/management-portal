@@ -32,6 +32,10 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="cpps.cpp" />
+		<Unit filename="headers.h" />
+		<Unit filename="login.cpp" />
+		<Unit filename="login.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
