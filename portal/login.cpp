@@ -1,12 +1,15 @@
 #include"login.h"
+#include"headers.h"
 #include<iostream>
 #include<fstream>
+#include<stdlib.h>
 using namespace std;
 
 Login::Login(){
 
 }
-void Login::getUser(){
+bool Login::getUser(){
+    system("CLS");
 
     cout<<"LOGIN"<<endl<<endl;
     cout<<"1. Student"<<endl;
@@ -14,25 +17,26 @@ void Login::getUser(){
     cout<<"3. Parent"<<endl;
     cout<<"4. Admin"<<endl;
     cout<<"5. Univesity"<<endl<<endl;
-    while(true){
+
         cout<<"Enter login type: ";
         cin>>loginType;
-        if(loginType>=1&&loginType<=5){
-            break;
-        }
-    }
+
+
     cout<<endl;
-    cout<<"Username: ";
-    cin>>userName;
-    cout<<"Password: ";
-    cin>>password;
+
     switch(loginType){
         case 1: fileName="logindata/students.txt"; break;
         case 2: fileName="logindata/faculty.txt"; break;
         case 3: fileName="logindata/parents.txt"; break;
         case 4: fileName="logindata/admins.txt"; break;
         case 5: fileName="logindata/university.txt"; break;
+        default: getUser();
     }
+    cout<<"Username: ";
+    cin>>userName;
+    cout<<"Password: ";
+    cin>>password;
+    return validate();
 }
 bool Login::validate(){
     ifstream loginFile(fileName);
@@ -46,6 +50,11 @@ bool Login::validate(){
         }
     }
     loginFile.close();
-    return false;
+    getUser();
 }
-
+string Login::getUserName(){
+    return userName;
+}
+int Login::getLoginType(){
+    return loginType;
+}

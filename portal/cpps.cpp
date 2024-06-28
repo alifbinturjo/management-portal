@@ -1,24 +1,43 @@
 #include"headers.h"
 #include"login.h"
+#include"uni.h"
 #include<iostream>
 #include<stdlib.h>
 using namespace std;
 
+void run(){
+    performLogin();
+}
 void performLogin(){
-
-    while(true){
         Login login;
-        login.getUser();
-        if(login.validate()){
+
+        if(login.getUser()){
+
             cout<<endl<<"Login successful"<<endl;
             system("PAUSE");
-            system("CLS");
-            break;
+
+            string userName=login.getUserName();
+            int loginType=login.getLoginType();
+            goToMenu(userName,loginType);
         }
-        else{
-            system("CLS");
-        }
+
+}
+void goToMenu(string &userName,int &loginType){
+    switch(loginType){
+        case 1:
+             cout<<0<<endl;
+             break;
+        case 2:
+             cout<<0<<endl;
+             break;
+        case 3:
+             cout<<0<<endl;
+             break;
+        case 4:
+             cout<<0<<endl;
+             break;
+        case 5:
+             Uni uni(userName);
+             break;
     }
-
-
 }

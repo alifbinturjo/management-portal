@@ -37,6 +37,8 @@
 		<Unit filename="login.cpp" />
 		<Unit filename="login.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="uni.cpp" />
+		<Unit filename="uni.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

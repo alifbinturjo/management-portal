@@ -8,11 +8,11 @@ using namespace std;
 
 int main()
 {
-    cout<<"UNIVERSITY PORTAL"<<endl<<endl<<flush;
+    cout<<"UNIVERSITY PORTAL"<<endl<<endl;
     system("PAUSE");
     system("CLS");
 
-    performLogin();
+    run();
 
     return 0;
 }

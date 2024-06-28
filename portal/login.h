@@ -6,9 +6,11 @@ using namespace std;
 class Login{
 public:
     Login();
-    void getUser();
-    bool validate();
+    bool getUser();
+    string getUserName();
+    int getLoginType();
 private:
+    bool validate();
     int loginType;
     string userName;
     string password;
