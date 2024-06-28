@@ -4,6 +4,5 @@
 using namespace std;
 
 void performLogin();
-void getUser(int &loginType,string &userName,string &password);
 
 #endif // HEADERS_H

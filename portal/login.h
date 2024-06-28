@@ -5,14 +5,18 @@ using namespace std;
 
 class Login{
 public:
-    Login(const int &loginType,const string &userName,const string &password);
-    bool validate() const;
+    Login();
+    void getUser();
+    bool validate();
 private:
     int loginType;
     string userName;
     string password;
     string fileName;
-    bool checkValidity() const;
+    string line;
+    string storedUser;
+    string storedPass;
+    size_t pos;
 };
 
 #endif // LOGIN_H
