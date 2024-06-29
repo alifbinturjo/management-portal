@@ -20,13 +20,16 @@
 1719662253 c:\users\user\documents\management-portal\portal\headers.h
 	<string>
 
-1719662157 source:c:\users\user\documents\management-portal\portal\cpps.cpp
+1719675001 source:c:\users\user\documents\management-portal\portal\cpps.cpp
 	<iostream>
 	<stdlib.h>
 	"headers.h"
 	"login.h"
 	"uni.h"
 	"admin.h"
+	"parent.h"
+	"fac.h"
+	"student.h"
 
 1719662858 c:\users\user\documents\management-portal\portal\uni.h
 	<string>
@@ -38,13 +41,43 @@
 	"headers.h"
 	"uni.h"
 
-1719661855 source:c:\users\user\documents\management-portal\portal\admin.cpp
+1719674018 source:c:\users\user\documents\management-portal\portal\admin.cpp
 	<iostream>
+	<string>
 	<stdlib.h>
-	"admin.h"
 	"headers.h"
+	"admin.h"
+
+1719674018 c:\users\user\documents\management-portal\portal\admin.h
 	<string>
 
-1719663135 c:\users\user\documents\management-portal\portal\admin.h
+1719674018 c:\users\user\documents\management-portal\portal\parent.h
+	<string>
+
+1719674768 source:c:\users\user\documents\management-portal\portal\parent.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	"headers.h"
+	"parent.h"
+
+1719674768 source:c:\users\user\documents\management-portal\portal\fac.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	"headers.h"
+	"fac.h"
+
+1719674768 c:\users\user\documents\management-portal\portal\fac.h
+	<string>
+
+1719675086 source:c:\users\user\documents\management-portal\portal\student.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
+	"headers.h"
+	"student.h"
+
+1719675086 c:\users\user\documents\management-portal\portal\student.h
 	<string>
 

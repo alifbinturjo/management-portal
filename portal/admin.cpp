@@ -18,8 +18,10 @@ void Admin::showMenu(){
     cout<<"4. Remove a faculty member"<<endl;
     cout<<"5. Announcement for students"<<endl;
     cout<<"6. Announcement for faculties"<<endl;
-    cout<<"7. Mails"<<endl;
-    cout<<"8. Logout"<<endl<<endl;
+    cout<<"7. Announcement for parents"<<endl;
+    cout<<"8. Mails"<<endl;
+    cout<<"9. Mail to University"<<endl;
+    cout<<"10. Logout"<<endl<<endl;
 
     cout<<"Enter an option: ";
     cin>>opt;
@@ -46,9 +48,15 @@ void Admin::menuWorker(){
         announcementFaculty();
         break;
     case 7:
-        mails();
+        announcementParent();
         break;
     case 8:
+        mails();
+        break;
+    case 9:
+        mailTo();
+        break;
+    case 10:
         performLogin();
         break;
     default:
@@ -67,6 +75,11 @@ void Admin::announcementStudnet(){
 }
 void Admin::announcementFaculty(){
 }
+void Admin::announcementParent(){
+}
 void Admin::mails(){
+
+}
+void Admin::mailTo(){
 
 }

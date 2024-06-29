@@ -15,7 +15,9 @@ private:
     void removeFaculty();
     void announcementStudnet();
     void announcementFaculty();
+    void announcementParent();
     void mails();
+    void mailTo();
     string userName;
     int opt;
 };

@@ -4,6 +4,9 @@
 #include"login.h"
 #include"uni.h"
 #include"admin.h"
+#include"parent.h"
+#include"fac.h"
+#include"student.h"
 using namespace std;
 
 void run(){
@@ -25,15 +28,18 @@ void performLogin(){
 }
 void goToMenu(string &userName,int &loginType){
     switch(loginType){
-        case 1:
-             cout<<0<<endl;
+        case 1:{
+             Student student(userName);
              break;
-        case 2:
-             cout<<0<<endl;
+        }
+        case 2:{
+             Fac fac(userName);
              break;
-        case 3:
-             cout<<0<<endl;
+        }
+        case 3:{
+             Parent parent(userName);
              break;
+        }
         case 4:{
              Admin admin(userName);
              break;
