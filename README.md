@@ -7,11 +7,16 @@ Trying to build a console based full management portal with tons of features usi
 
 <h3>Features</h3>
 
-- [x] Login using stored data
-- [x] File based database
+- [ ] Login
+- [ ] University field
+- [ ] Admin field
+- [ ] Parent field
+- [ ] Faculty member field
+- [ ] Student field
+- [ ] Register and remove
+- [ ] Announcement
+- [ ] Mails
 
 <h3>Used in code</h3>
 
-- [x] File
-- [x] OOP
-- [x] Methods
+
