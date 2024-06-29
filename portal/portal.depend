@@ -1,38 +1,50 @@
 # depslib dependency file v1.0
-1719598717 source:c:\users\user\documents\management-portal\portal\main.cpp
+1719662275 source:c:\users\user\documents\management-portal\portal\main.cpp
 	<iostream>
 	<stdlib.h>
-	"login.h"
 	"headers.h"
+	"login.h"
 	"uni.h"
+	"admin.h"
 
-1719599313 c:\users\user\documents\management-portal\portal\login.h
+1719662253 c:\users\user\documents\management-portal\portal\login.h
 	<string>
 
-1719599313 source:c:\users\user\documents\management-portal\portal\login.cpp
-	"login.h"
-	"headers.h"
+1719662366 source:c:\users\user\documents\management-portal\portal\login.cpp
 	<iostream>
+	<stdlib.h>
 	<fstream>
-	<stdlib.h>
+	"headers.h"
+	"login.h"
 
-1719598029 c:\users\user\documents\management-portal\portal\headers.h
+1719662253 c:\users\user\documents\management-portal\portal\headers.h
 	<string>
 
-1719599563 source:c:\users\user\documents\management-portal\portal\cpps.cpp
+1719662157 source:c:\users\user\documents\management-portal\portal\cpps.cpp
+	<iostream>
+	<stdlib.h>
 	"headers.h"
 	"login.h"
 	"uni.h"
-	<iostream>
-	<stdlib.h>
+	"admin.h"
 
-1719599848 c:\users\user\documents\management-portal\portal\uni.h
+1719662858 c:\users\user\documents\management-portal\portal\uni.h
 	<string>
 
-1719599848 source:c:\users\user\documents\management-portal\portal\uni.cpp
-	"uni.h"
+1719662366 source:c:\users\user\documents\management-portal\portal\uni.cpp
+	<iostream>
+	<string>
+	<stdlib.h>
 	"headers.h"
+	"uni.h"
+
+1719661855 source:c:\users\user\documents\management-portal\portal\admin.cpp
 	<iostream>
-	<string>
 	<stdlib.h>
+	"admin.h"
+	"headers.h"
+	<string>
+
+1719663135 c:\users\user\documents\management-portal\portal\admin.h
+	<string>
 

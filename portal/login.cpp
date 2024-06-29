@@ -1,16 +1,37 @@
-#include"login.h"
-#include"headers.h"
 #include<iostream>
-#include<fstream>
 #include<stdlib.h>
+#include<fstream>
+#include"headers.h"
+#include"login.h"
 using namespace std;
 
 Login::Login(){
-
+    checkUni=false;
+    ifstream file("logindata/university.txt");
+    getline(file,line);
+    file.close();
+    pos=line.find(',');
+    if(pos==string::npos){
+        checkUni=true;
+        cout<<"No university registered"<<endl<<endl;
+        cout<<"Register an username: ";
+        cin>>uniUser;
+        cout<<"Password: ";
+        cin>>uniPass;
+        ofstream file("logindata/university.txt");
+        file<<uniUser<<","<<uniPass<<endl;
+        file.close();
+        cout<<endl<<"Registered"<<endl;
+        system("PAUSE");
+    }
 }
 bool Login::getUser(){
     system("CLS");
-
+    if(checkUni){
+        userName=uniUser;
+        loginType=5;
+        return true;
+    }
     cout<<"LOGIN"<<endl<<endl;
     cout<<"1. Student"<<endl;
     cout<<"2. Faculty member"<<endl;

@@ -1,8 +1,9 @@
+#include<iostream>
+#include<stdlib.h>
 #include"headers.h"
 #include"login.h"
 #include"uni.h"
-#include<iostream>
-#include<stdlib.h>
+#include"admin.h"
 using namespace std;
 
 void run(){
@@ -33,11 +34,13 @@ void goToMenu(string &userName,int &loginType){
         case 3:
              cout<<0<<endl;
              break;
-        case 4:
-             cout<<0<<endl;
+        case 4:{
+             Admin admin(userName);
              break;
-        case 5:
+        }
+        case 5:{
              Uni uni(userName);
              break;
+        }
     }
 }

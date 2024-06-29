@@ -1,9 +1,9 @@
 #include <iostream>
 #include<stdlib.h>
-#include"login.h"
 #include"headers.h"
+#include"login.h"
 #include"uni.h"
-
+#include"admin.h"
 using namespace std;
 
 int main()

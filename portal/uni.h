@@ -8,12 +8,12 @@ public:
     Uni(string &userName);
 
 private:
-    void menuWorker();
     void showMenu();
+    void menuWorker();
     void registerAdmin();
     void removeAdmin();
     void announcement();
-    void message();
+    void mails();
     string userName;
     int opt;
 };

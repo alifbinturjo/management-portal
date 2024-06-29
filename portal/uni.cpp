@@ -1,8 +1,8 @@
-#include"uni.h"
-#include"headers.h"
 #include<iostream>
 #include<string>
 #include<stdlib.h>
+#include"headers.h"
+#include"uni.h"
 using namespace std;
 
 Uni::Uni(string &userName){
@@ -15,7 +15,7 @@ void Uni::showMenu(){
     cout<<"1. Register an admin"<<endl;
     cout<<"2. Remove an admin"<<endl;
     cout<<"3. Announcement for admins"<<endl;
-    cout<<"4. Messages"<<endl;
+    cout<<"4. Mails"<<endl;
     cout<<"5. Logout"<<endl<<endl;
 
         cout<<"Enter an option: ";
@@ -35,9 +35,9 @@ void Uni::menuWorker(){
         removeAdmin();
         break;
     case 3:
-        message();
-    case 4:
         announcement();
+    case 4:
+        mails();
         break;
     case 5:
         performLogin();
@@ -55,6 +55,6 @@ void Uni::removeAdmin(){
 void Uni::announcement(){
 
 }
-void Uni::message(){
+void Uni::mails(){
 
 }

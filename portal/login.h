@@ -19,6 +19,9 @@ private:
     string storedUser;
     string storedPass;
     size_t pos;
+    string uniUser;
+    string uniPass;
+    bool checkUni;
 };
 
 #endif // LOGIN_H
