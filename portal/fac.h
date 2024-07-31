@@ -8,6 +8,12 @@ public:
     Fac(string &userName);
 private:
     void showMenu();
+    void menuWorker();
+    void cgpaMod();
+    void mails();
+    void mailTo();
+    void checkDept();
     string userName;
+    int opt;
 };
 #endif // FAC_H

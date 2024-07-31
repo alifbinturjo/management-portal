@@ -32,11 +32,19 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="admin.cpp" />
+		<Unit filename="admin.h" />
 		<Unit filename="cpps.cpp" />
+		<Unit filename="fac.cpp" />
+		<Unit filename="fac.h" />
 		<Unit filename="headers.h" />
 		<Unit filename="login.cpp" />
 		<Unit filename="login.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="parent.cpp" />
+		<Unit filename="parent.h" />
+		<Unit filename="student.cpp" />
+		<Unit filename="student.h" />
 		<Unit filename="uni.cpp" />
 		<Unit filename="uni.h" />
 		<Extensions>

@@ -8,7 +8,11 @@ public:
     Student(string &userName);
 private:
     void showMenu();
+    void menuWorker();
+    void myDetail();
+    void mails();
     string userName;
+    int opt;
 };
 
 #endif // STUDENT_H
