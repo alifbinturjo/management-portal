@@ -1,6 +1,7 @@
 #include<iostream>
 #include<stdlib.h>
 #include<fstream>
+#include<sstream>
 #include"headers.h"
 #include"login.h"
 using namespace std;
@@ -10,8 +11,8 @@ Login::Login(){
     ifstream file("logindata/university.txt");
     getline(file,line);
     file.close();
-    pos=line.find(',');
-    if(pos==string::npos){
+
+    if(line==""){
         checkUni=true;
         cout<<"No university registered"<<endl<<endl;
         cout<<"Register an username: ";
@@ -19,7 +20,7 @@ Login::Login(){
         cout<<"Password: ";
         cin>>uniPass;
         ofstream file("logindata/university.txt");
-        file<<uniUser<<","<<uniPass<<endl;
+        file<<uniUser<<" "<<uniPass<<endl;
         file.close();
         cout<<endl<<"Registered"<<endl;
         system("PAUSE");
@@ -62,9 +63,8 @@ bool Login::getUser(){
 bool Login::validate(){
     ifstream loginFile(fileName);
     while(getline(loginFile,line)){
-        pos=line.find(',');
-        storedUser=line.substr(0,pos);
-        storedPass=line.substr(pos+1);
+        stringstream ss(line);
+        ss>>storedUser>>storedPass;
         if(userName==storedUser&&password==storedPass){
             loginFile.close();
             return true;

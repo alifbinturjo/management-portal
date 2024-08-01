@@ -1,6 +1,7 @@
 #ifndef UNI_H
 #define UNI_H
 #include<string>
+
 using namespace std;
 
 class Uni{
@@ -16,6 +17,15 @@ private:
     void mails();
     string userName;
     int opt;
+    string adminUsername;
+    string adminPass;
+    string line;
+    bool found;
+    string tempUsername;
+    string tempPass;
+    string announce;
+    string mailing;
+    string choice;
 };
 
 #endif // UNI_H
