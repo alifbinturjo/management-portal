@@ -70,9 +70,7 @@ void Uni::removeAdmin(){
     cin>>adminUsername;
     vector<string>temp;
     ifstream file("logindata/admins.txt");
-    if(!file.is_open()){
-        cout<<"no"<<endl;
-    }
+
     found=false;
     while(getline(file,line)){
         stringstream ss(line);
@@ -100,7 +98,7 @@ void Uni::removeAdmin(){
 }
 void Uni::announcement(){
     system("CLS");
-    cout<<"Write announcement in a single line: "<<endl<<endl;
+    cout<<"Write in a single line: "<<endl<<endl;
     cin.ignore();
     getline(cin,announce);
 
@@ -108,7 +106,7 @@ void Uni::announcement(){
         file.open("announcementdata/university.txt",ios::app);
         file<<announce<<endl;
         file.close();
-        cout<<endl<<"Published"<<endl;
+        cout<<endl<<"Successful"<<endl;
         system("PAUSE");
         showMenu();
 

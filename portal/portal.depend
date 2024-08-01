@@ -35,7 +35,7 @@
 1722522409 c:\users\user\documents\management-portal\portal\uni.h
 	<string>
 
-1722522662 source:c:\users\user\documents\management-portal\portal\uni.cpp
+1722533083 source:c:\users\user\documents\management-portal\portal\uni.cpp
 	<iostream>
 	<string>
 	<stdlib.h>
@@ -45,14 +45,17 @@
 	"headers.h"
 	"uni.h"
 
-1719674018 source:c:\users\user\documents\management-portal\portal\admin.cpp
+1722533083 source:c:\users\user\documents\management-portal\portal\admin.cpp
 	<iostream>
 	<string>
 	<stdlib.h>
+	<fstream>
+	<vector>
+	<sstream>
 	"headers.h"
 	"admin.h"
 
-1719674018 c:\users\user\documents\management-portal\portal\admin.h
+1722533104 c:\users\user\documents\management-portal\portal\admin.h
 	<string>
 
 1719674018 c:\users\user\documents\management-portal\portal\parent.h
