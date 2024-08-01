@@ -222,10 +222,18 @@ void Admin::announcementParent(){
 void Admin::mails(){
     system("CLS");
     ifstream file("announcementdata/university.txt");
+    cout<<"From University: "<<endl<<endl;
     while(getline(file,mailing)){
         cout<<mailing<<endl<<endl;
     }
     file.close();
+    ifstream file2("announcementdata/factoad.txt");
+    cout<<"From Faculties: "<<endl<<endl;
+    while(getline(file2,mailing)){
+        cout<<mailing<<endl<<endl;
+    }
+    file2.close();
+
     cout<<"Enter delete to delete or anything else to go back: ";
     cin>>choice;
     if(choice=="delete"){

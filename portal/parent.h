@@ -9,6 +9,8 @@ public:
 private:
     void mails();
     string userName;
+    string mailing;
+    string choice;
 };
 
 #endif // PARENT_H

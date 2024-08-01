@@ -12,8 +12,22 @@ private:
     void cgpaMod();
     void mails();
     void mailTo();
-    void checkDept();
+    void myDetails();
     string userName;
     int opt;
+    string stuUser;
+    string tempUsername;
+    string nickname;
+    string major;
+    string cgpa;
+    string anoName;
+    string anoMaj;
+    string newCG;
+    bool found;
+    string line;
+    string mailing;
+    string choice;
+    string writeM;
+    string dept;
 };
 #endif // FAC_H
