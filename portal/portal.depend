@@ -45,7 +45,7 @@
 	"headers.h"
 	"uni.h"
 
-1722535561 source:c:\users\user\documents\management-portal\portal\admin.cpp
+1722536009 source:c:\users\user\documents\management-portal\portal\admin.cpp
 	<iostream>
 	<string>
 	<stdlib.h>
@@ -70,7 +70,7 @@
 	"headers.h"
 	"parent.h"
 
-1722535894 source:c:\users\user\documents\management-portal\portal\fac.cpp
+1722536009 source:c:\users\user\documents\management-portal\portal\fac.cpp
 	<iostream>
 	<string>
 	<stdlib.h>
@@ -83,13 +83,15 @@
 1722535894 c:\users\user\documents\management-portal\portal\fac.h
 	<string>
 
-1722440865 source:c:\users\user\documents\management-portal\portal\student.cpp
+1722588935 source:c:\users\user\documents\management-portal\portal\student.cpp
 	<iostream>
 	<string>
 	<stdlib.h>
+	<fstream>
+	<sstream>
 	"headers.h"
 	"student.h"
 
-1722440865 c:\users\user\documents\management-portal\portal\student.h
+1722588978 c:\users\user\documents\management-portal\portal\student.h
 	<string>
 
